@@ -1,0 +1,132 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Todo Container */
+.todo_cont {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/* Input section */
+.input-cont {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #222;
+  color: white;
+}
+
+.button-group {
+  display: flex;
+  gap: 5px;
+}
+
+/* Add Button */
+.add-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #28a745;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+/* Task List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+.todo-list p{
+    color: white;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  border-bottom: 1px solid #333;
+  color: white;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+.todo-list li:hover {
+  background-color: #3a3a3a;
+}
+
+/* Completed tasks */
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Clickable task text */
+.todo-list li span {
+  flex: 1;
+  cursor: pointer;
+  user-select: none;
+  padding-right: 10px;
+}
+
+/* Buttons next to task */
+.task-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
